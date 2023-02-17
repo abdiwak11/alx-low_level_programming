@@ -12,7 +12,7 @@ int main(void)
 	{
 		for (j = i; j < 10; j++)
 		{
-			if (i = j)
+			if (i == j)
 			{
 				continue;
 			}
@@ -22,7 +22,6 @@ int main(void)
 			putchar(' ');
 		}
 		putchar('\n');
-
-		return (0);
 	}
+	return (0);
 }

@@ -10,11 +10,11 @@ int main(void)
 
 	for (i = 0; i < 10; i++)
 	{
-		for (j = i; i < 10; j++)
+		for (j = 0; j < 10; j++)
 		{
-			for (k = j; k < 10; k++)
+			for (k = 0; k < 10; k++)
 			{
-				for (l = k; k < 10; k++)
+				for (l = 0; l < 10; l++)
 				{
 					if (i == j && j == k && k == l)
 					{
@@ -39,5 +39,3 @@ int main(void)
 
 	return (0);
 }
-
-

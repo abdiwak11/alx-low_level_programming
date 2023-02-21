@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * int _isalpha - checks whether its alphabet or not
+ * _isalpha - checks whether its alphabet or not
  *
- * Returns: 1 if c is aletter lowercase or upper
+ * Return: 1 if c is aletter lowercase or upper
  *
  * @c: parameter thats checked
  */

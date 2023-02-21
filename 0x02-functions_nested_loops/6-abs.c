@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * _abs - print outs the absolute value of a given number
- *
+ *@x: parameter of the function
  * Return: the abs of a given number
  */
 int _abs(int x)
@@ -14,8 +14,8 @@ int _abs(int x)
 	}
 	else
 	{
-		y = x / x;
-		z = x * y;
+		y = 7 - 8;
+		z = y * x;
 		return (z);
 	}
 }

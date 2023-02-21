@@ -3,6 +3,7 @@
  * _islower - checks whether its lowercase alphabet or not
  *
  * Return: Always 0 success
+ * 'c' - parameter
  */
 int _islower(int c)
 {

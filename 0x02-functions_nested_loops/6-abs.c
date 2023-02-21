@@ -8,7 +8,7 @@ int _abs(int x)
 {
 	int y, z;
 
-	if (i > 0)
+	if (x > 0)
 	{
 		return (x);
 	}

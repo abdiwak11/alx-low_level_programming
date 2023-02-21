@@ -4,14 +4,20 @@
  *
  * Return: the abs of a given number
  */
-int _abs(int i)
+int _abs(int x)
 {
-	if (i < 0)
+	int y, z;
+
+	if (i > 0)
 	{
-		int ab;
-		ab = i * -1;
-		return (ab);
+		return (x);
 	}
 	else
-		return (i);
+	{
+		y = x / x;
+		z = x * y;
+		return (z);
+	}
 }
+
+

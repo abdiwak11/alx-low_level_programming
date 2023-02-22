@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdio.h>
 /**
  * print_times_table - the function that prints 9 times
  *
@@ -13,36 +13,18 @@ void print_times_table(int n)
 		for (j = 0; j < n; j++)
 		{
 			x = i * j;
-			if (x > 9)
+			if (j == 0)
 			{
-				_putchar((x / 10) + 48);
-				_putchar((x % 10) + 48);
-				if (j == 9)
-				{
-					continue;
-				}
-				_putchar(',');
-				_putchar(' ');
+				printf("%d, ", x);
 			}
 			else
-			{
-				if (j == 0)
-				{
-					_putchar(48 + x);
-					_putchar(',');
-					_putchar(' ');
-				}
-				else
-				{
-					_putchar(' ');
-					_putchar(48 + x);
-					if (j == 9)
-						continue;
-					_putchar(',');
-					_putchar(' ');
-				}
+				printf(" %d", x);
+
+			if (j == n)
+				continue;
+
+			printf(", ");
 			}
 		}
-		_putchar('\n');
 	}
 }

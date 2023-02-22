@@ -13,18 +13,20 @@ void print_times_table(int n)
 		for (j = 0; j <= n; j++)
 		{
 			x = i * j;
+
 			if (j == 0)
 			{
 				printf("%d, ", x);
 			}
 			else
 			{
+				if (j == n)
+				{
+					printf(" %d\n", x);
+					continue;
+				}
 				printf(" %d,", x);
 			}
-
-			if (j == n)
-				continue;
 		}
-		printf("\n");
 	}
 }

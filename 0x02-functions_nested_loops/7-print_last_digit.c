@@ -8,6 +8,7 @@
 int print_last_digit(int x)
 {
 	int i, n, a, j, q;
+	char p, o, u, m;
 
 	n = 0 - 10;
 	a = 1 - 2;
@@ -15,21 +16,21 @@ int print_last_digit(int x)
 	if (x > 10)
 	{
 		i = x % 10;
-		return (ii);
+		return (i);
 	}
 	else if (x < 10 && x >= 0)
 	{
-		return (xx);
+		return (x);
 	}
 	else if (x > n && x <= a)
 	{
 		j = x * a;
-		return (jj);
+		return (j);
 	}
 	else
 	{
 		q = (x % 10) * a;
-		return (qq);
+		return (q);
 	}
 }
 

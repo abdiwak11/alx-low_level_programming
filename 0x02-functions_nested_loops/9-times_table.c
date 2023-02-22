@@ -20,7 +20,6 @@ void times_table(void)
 				_putchar((x % 10) + 48);
 				if (j == 9)
 				{
-					_putchar('$');
 					continue;
 				}
 				_putchar(',');
@@ -28,18 +27,23 @@ void times_table(void)
 			}
 			else
 			{
-				if (j == 9)
-				{
-					_putchar(' ');
-					_putchar(48 + x);
-					_putchar('$');
-					continue;
-				}
-				else
+				if (j = 0)
 				{
 					_putchar(48 + x);
 					_putchar(',');
 					_putchar(' ');
+				}
+				if else (j == 9)
+				{
+					_putchar(' ')
+					_putchar(48 + x);
+					continue;
+				}
+				else
+				{
+					_putchar(' ');
+					_putchar(48 + x);
+					_putchar(',');
 					_putchar(' ');
 				}
 			}

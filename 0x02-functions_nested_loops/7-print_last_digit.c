@@ -8,7 +8,6 @@
 int print_last_digit(int x)
 {
 	int i, n, a, j, q;
-	char p, o, u, m;
 
 	n = 0 - 10;
 	a = 1 - 2;

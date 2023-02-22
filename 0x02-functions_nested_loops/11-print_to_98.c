@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdio.h>
 /**
  * print_to_98 - prints
  *
@@ -7,64 +7,32 @@
  */
 void print_to_98(int n)
 {
-	int i, k, z;
+	int x;
 
-	if (n <= 0 || n <= 98)
+	if (n >= 98)
 	{
-		for(i = n; i <= 98; i++)
+		for (x = n; x >= 98; x--)
 		{
-			if (i >= 0 && i < 10)
-				_putchar(48 + i);
-			else if (i >= (-9) && i < 0)
+			if (x == 98)
 			{
-				k = i * (-1);
-				_putchar('-');
-				_putchar(48 + k);
-			}
-			else if (i <= (-10))
-			{
-				z = i * (-1);
-				_putchar('-');
-				_putchar((z / 10) + 48);
-				_putchar((z % 10) + 48);
-			}
-			else
-			{
-				_putchar((i / 10) + 48);
-				_putchar((i % 10) + 48);
-			}
-			
-			if (i == 98)
-			{
-				_putchar('\n');
+				printf("%d\n", x);
 				continue;
 			}
-			_putchar(',');
-			_putchar(' ');
+			printf("%d, ", x);
 		}
+		printf("\n");
 	}
-	else
+	else if (n < 98)
 	{
-		for (i = n; i > 98; i--)
+		for (x = n; x <= 98; x++)
 		{
-			if (n < 100)
+			if (x == 98)
 			{
-				_putchar((i / 10) + 48);
-				_putchar((i % 10) + 48);
-			}
-			else
-			{
-				_putchar(((i / 10) / 10) + 48);
-				_putchar(((i / 10) % 10) + 48);
-				_putchar((i % 10) + 48);
-			}
-			if (i == 98)
-			{
-				_putchar('\n');
+				printf("%d\n", x);
 				continue;
 			}
-			_putchar(',');
-			_putchar(' ');
+			printf("%d, ", x);
 		}
+		printf("\n);
 	}
 }

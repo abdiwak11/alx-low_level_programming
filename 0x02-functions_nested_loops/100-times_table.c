@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * print_times_table - the function that prints 9 times
- *
+ * @n: parameter of the function
  * Return: the tabel
  */
 void print_times_table(int n)

@@ -13,7 +13,17 @@ void times_table(void)
 		for (j = 0; j < 10; j++)
 		{
 			x = i * j;
-			_putchar(48 + x);
+
+			if (x > 9)
+			{
+				_putchar((x / 10) + 48);
+				_putchar((x % 10) + 48);
+			}
+			else
+			{
+				-putchar(48 + x);
+			}
+
 			if (j == 9)
 			{
 				_putchar('$');

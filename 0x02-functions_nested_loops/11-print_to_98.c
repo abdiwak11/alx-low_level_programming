@@ -25,8 +25,8 @@ void print_to_98(int n)
 			{
 				z = i * (-1);
 				_putchar('-');
-				_putchar((i / 10) + 48);
-				_putchar((i % 10) + 48);
+				_putchar((z / 10) + 48);
+				_putchar((z % 10) + 48);
 			}
 			else
 			{
@@ -46,8 +46,8 @@ void print_to_98(int n)
 		{
 			if (n < 100)
 			{
-				_putchar((i / 10);
-				_putchar((i % 10);
+				_putchar((i / 10) + 48);
+				_putchar((i % 10) + 48);
 			}
 			else
 			{

@@ -15,21 +15,24 @@ int print_last_digit(int x)
 	if (x > 10)
 	{
 		i = x % 10;
+		_putchar(48 + i)
 		return (i);
 	}
 	else if (x < 10 && x >= 0)
 	{
+		_putchar(48 + x);
 		return (x);
 	}
 	else if (x > n && x <= a)
 	{
 		j = x * a;
+		_putchar(48 + j);
 		return (j);
 	}
 	else
 	{
 		q = (x % 10) * a;
+		_putchar(48 + q);
 		return (q);
 	}
 }
-

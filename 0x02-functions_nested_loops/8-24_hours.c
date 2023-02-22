@@ -10,7 +10,7 @@ void jack_bauer(void)
 
 	for (i = 0; i < 3; i++)
 	{
-		for (x = 0; x < 4; x++)
+		for (x = 0; x < 10; x++)
 		{
 			for (j = 0; j < 6; j++)
 			{

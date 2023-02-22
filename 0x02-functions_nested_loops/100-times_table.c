@@ -8,9 +8,9 @@ void print_times_table(int n)
 {
 	int i, j, x;
 
-	for (i = 0; i < n; i++)
+	for (i = 0; i <= n; i++)
 	{
-		for (j = 0; j < n; j++)
+		for (j = 0; j <= n; j++)
 		{
 			x = i * j;
 			if (j == 0)
@@ -18,12 +18,13 @@ void print_times_table(int n)
 				printf("%d, ", x);
 			}
 			else
-				printf(" %d", x);
+			{
+				printf(" %d,", x);
+			}
 
 			if (j == n)
 				continue;
-
-			printf(", ");
 		}
+		printf("\n");
 	}
 }

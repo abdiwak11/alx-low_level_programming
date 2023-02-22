@@ -15,7 +15,7 @@ int print_last_digit(int x)
 	if (x > 10)
 	{
 		i = x % 10;
-		_putchar(48 + i)
+		_putchar(48 + i);
 		return (i);
 	}
 	else if (x < 10 && x >= 0)

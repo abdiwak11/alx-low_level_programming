@@ -18,20 +18,25 @@ void times_table(void)
 			{
 				_putchar((x / 10) + 48);
 				_putchar((x % 10) + 48);
+				if (j == 9)
+				{
+					_putchar('$');
+					continue;
+				}
+				_putchar(',');
+				_putchar(' ');
 			}
 			else
 			{
 				_putchar(48 + x);
-				_putchar(' ');
+				if (j == 9)
+				{
+					_putchar('$');
+					continue;
+				}
+				_putchar(',')
+				_putchar('  ');
 			}
-
-			if (j == 9)
-			{
-				_putchar('$');
-				continue;
-			}
-			_putchar(',');
-			_putchar(' ');
 		}
 		_putchar('\n');
 	}

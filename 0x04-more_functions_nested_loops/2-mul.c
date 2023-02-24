@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _isdigit - checks for a digit
+ * mul - multiplys the given num
  * @a: parameter of the function
  * @b: parameter of the function
  * Return: 1 for digit 0 otherwise

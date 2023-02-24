@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * _isdigit - checks whether upper or lower
+ * _isdigit - checks for a digit
  * @c: parameter of the function
- * Return: 1 for uppercase and 0 otherwise
+ * Return: 1 for digit 0 otherwise
  */
 int _isdigit(int c)
 {

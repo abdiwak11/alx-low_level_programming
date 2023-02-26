@@ -1,25 +1,27 @@
 #include "main.h"
 /**
- * more_numbers - print numbers
- * 
- * Return: Always 0 success
+ * more_numbers - print numbers 0 -14
+ *
+ * Return: void
  */
 void more_numbers(void)
 {
-	int i, j;
+	char x, y;
+	int i = 0;
 
-	for (i = 0; i < 10; i++)
+	while (i < 10)
 	{
-		for (j = 0; j < 15; j++)
+		for (x = 0; x <= 14; x++)
 		{
-			if (j < 10)
-				_putchar(48 + i);
-			else
+			y = x;
+			if (x > 9)
 			{
-				_putchar((j / 10));
-				_putchar((j % 10));
+				_putchar('1');
+				c = x % 10;
 			}
+			_putchar(48 + y);
 		}
 		_putchar('\n');
+		i++;
 	}
 }

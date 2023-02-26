@@ -19,6 +19,6 @@ int main(void)
 		}
 		divisor += 1;
 	}
-	printf("%1d\n", larg_prim);
+	printf("%ld\n", larg_prim);
 	return (0);
 }

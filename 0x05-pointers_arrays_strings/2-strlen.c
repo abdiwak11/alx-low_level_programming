@@ -6,7 +6,7 @@
  * Return: the length 
  */
 
-int _strlen(char *s);
+int _strlen(char *s)
 {
 	char s[] = s;
 	int i;

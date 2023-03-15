@@ -1,43 +1,50 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
-#include <ctype.h>
-
 /**
- * main - entry point
- * @argc: Number of command line arguments
- * @argv: Array name
- * Return: Always 0 success
+ * main - Prints the minimum number of coins
+ * @argc: The number of arguments
+ * @argv: An array of pointers to the arguments
+ * Return: if no of arg = 1, 1, otherwise 0
  */
 
 int main(int argc, char *argv[])
 {
-	int i, j, length, sum;
-	char *ptr;
+	int cents, coins = 0;
 
-	if (argc < 2)
-	printf("0\n");
-	else
+	if (argc != 2)
 	{
-		sum = 0;
-		for (i = 1; i < argc; i++)
-		{
-			ptr = argv[i];
-			length = strlen(ptr);
-
-			for (j = 0; j < length; j++)
-			{
-				if (isdigit(*(ptr + j)) == 0)
-				{
-					printf("Error\n");
-					return (1);
-				}
-			}
-
-			sum += atoi(argv[i]);
-		}
-
-		printf("%d\n", sum);
+		printf("Error\n");
+		return (1);
 	}
+
+	cents = atoi(argv[1]);
+
+	while (cents > 0)
+	{
+		coins++;
+		if ((cents - 25) >= 0)
+		{
+			cents -= 25;
+			continue;
+		}
+		if ((cents - 10) >= 0)
+		{
+			cents -= 10;
+			continue;
+		}
+		if ((cents - 5) >= 0)
+		{
+			cents -= 5;
+			continue;
+		}
+		if ((cents - 2) >= 0)
+		{
+			cents -= 2;
+			continue;
+		}
+		cents--;
+	}
+
+	printf("%d\n", coins);
 	return (0);
 }
